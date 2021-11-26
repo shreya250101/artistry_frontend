@@ -1,0 +1,54 @@
+.nav {
+    height: 70px;
+}
+
+.icon {
+    animation: slideUp 0.3s linear forwards;
+}
+
+.joinButton {
+    animation: slideUp 0.3s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        height: 50px;
+    }
+
+    .navLinks {
+        animation: slideDown 0.3s ease-in forwards;
+    }
+
+    .backdrop {
+        animation: fadeIn 0.1s ease-in forwards;
+    }
+}

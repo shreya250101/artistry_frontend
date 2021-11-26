@@ -1,0 +1,18 @@
+.hamContainer {
+    width: 30px;
+    height: calc(3px + 1rem);
+}
+
+.hamContainer div {
+    width: 30px;
+    height: 1px;
+    transition: all 0.3s ease-in;
+}
+
+.hamContainer .hamFirst {
+    transform: rotate(45deg) translate(3px, 6px);
+}
+
+.hamContainer .hamThird {
+    transform: rotate(-45deg) translate(0px, -3px);
+}
